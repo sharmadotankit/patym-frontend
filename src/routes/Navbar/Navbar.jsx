@@ -187,10 +187,10 @@ function NavbarComponent() {
           onHide={handleLoginModelClose}
         >
           <Modal.Body>
-            <Tab.Container activeKey={isLogin} onSelect={handleSelect}>
+            <Tab.Container activeKey={isLogin?"login":'register'} onSelect={handleSelect}>
               <Nav variant="tabs">
                 <Nav.Item>
-                  <Nav.Link eventKey="login">Login</Nav.Link>
+                  <Nav.Link eventKey={"login"}>Login</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="register">Register</Nav.Link>
