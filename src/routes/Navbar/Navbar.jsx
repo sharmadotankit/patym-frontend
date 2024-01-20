@@ -24,7 +24,7 @@ function NavbarComponent() {
     setShowLoginModal(false);
   };
 
-  console.log(currentUser);
+
 
   const navigate = useNavigate();
 
@@ -48,11 +48,7 @@ function NavbarComponent() {
     try {
       setError("");
       const { email, password } = userData;
-      console.log("came her e1", email, password);
-      console.log(
-        !email,
-        !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
-      );
+
       try {
         if (
           !email ||
