@@ -42,7 +42,7 @@ function NavbarComponent() {
     localStorage.setItem("_id", "");
     localStorage.setItem("token", "");
     localStorage.setItem("isLoggedIn", false);
-    navigate("/login");
+    navigate("/");
   };
 
 
