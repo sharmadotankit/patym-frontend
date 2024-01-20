@@ -83,7 +83,7 @@ function NavbarComponent() {
         localStorage.setItem("isLoggedIn", true);
 
         toast.success("User login successful");
-        navigate("/home");
+        navigate("/");
         handleLoginModelClose();
         setUserData({
           email: "",
@@ -135,7 +135,7 @@ function NavbarComponent() {
         localStorage.setItem("isLoggedIn", true);
 
         toast.success("User registration successful");
-        navigate("/home");
+        navigate("/");
         handleLoginModelClose();
         setUserData({
           email: "",

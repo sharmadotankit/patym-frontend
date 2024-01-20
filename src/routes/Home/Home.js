@@ -1,13 +1,11 @@
-import React, { useState } from "react";
 import useDocumentTitle from "../../utils/helper/useDocumentTitle";
 import BannerComponent from "../../component/BannerComponent/BannerComponent";
 import RechargeAndBill from "../../component/RechargeAndBills/RechargeAndBill";
 import BookAndBuy from "../../component/BookAndBuy/BookAndBuy";
 import Footer from "../../component/Footer/Footer";
-import { Button, Modal } from "react-bootstrap";
 
 export default function Home() {
-  useDocumentTitle("Home");
+  useDocumentTitle("Paytm Clone");
 
 
   return (
