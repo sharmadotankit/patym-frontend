@@ -1,0 +1,79 @@
+@import "../../variable.scss";
+
+.banner-component-div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0% 10%;
+    text-align: left;
+    margin-top: 20px;
+    .left-banner-div{
+        flex:1;
+        padding-left: 10%;
+        .send-money-div{
+            max-width: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h6{
+                font-size: 1rem;
+            }
+        }
+
+        .intro{
+
+            h1{
+                font-size: 4rem;
+            }
+            .header-style-1{
+                font-weight: bold;
+                text-align: left;
+                color: $primary-color;
+            }
+
+            .header-style-2{
+                font-weight: bold;
+                text-align: left;
+                color: $secondary-color;
+            }
+
+            h6{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .right-banner-div{
+        flex:1;
+    }
+}
+
+
+
+.download-button {
+    background-color: #000; 
+    color: #fff; 
+    border: 1px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 25px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    &:hover {
+      background-color: #fff; 
+      color: #000; 
+      border: 1px solid rgb(0, 0, 0);
+    }
+  
+    .icons {
+      display: flex;
+      margin-left: 10px;
+      gap: 8px;
+    }
+  }
+  

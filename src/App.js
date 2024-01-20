@@ -1,17 +1,14 @@
 import "./App.css";
-import { Route, Routes, BrowserRouter, useNavigate } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import Home from "./routes/Home/Home";
 import {  useContext, useEffect, useState } from "react";
 import { ApplicationContext } from "./context/context";
-import Navbar from "./routes/Navbar/Navbar";
-import Signup from "./routes/Auth/Signup";
-import Login from "./routes/Auth/Login";
+import NavbarComponent from "./routes/Navbar/Navbar";
 import ServerConnectingComponent from "./component/ServerConnectingComponent";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import { connectToServer } from "./utils/actions/allActions";
 import {jwtDecode} from "jwt-decode";
-
 
 function App() {
   const {setCurrentUser} = useContext(ApplicationContext);
@@ -92,11 +89,9 @@ function App() {
       <>
       <ToastContainer />
       <Routes>
-        <Route path="/" element={<Navbar />}>
-        {!isLoggedIn || (!token && <Route path="/" element={<Login />}></Route>)}
+        <Route path="/" element={<NavbarComponent />}>
+        {!isLoggedIn || (!token && <Route path="/" element={<Home />}></Route>)}
           <Route index element={<Home />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/home" element={<Home />}></Route>
         </Route>
       </Routes>

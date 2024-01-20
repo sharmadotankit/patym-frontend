@@ -1,0 +1,36 @@
+@import "../../variable.scss";
+
+.full-container{
+    width: 100%;
+    background-color: $primary-color;
+    color:white;
+    padding: 30px 10%;
+    text-align: left;
+
+    
+    .inner-container{
+        padding-left: 10%;
+        h1{
+            text-align: left;
+            
+            font-weight: bold;
+        }
+
+        .item-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .item-div{
+            
+                margin: 30px 10px;
+                font-weight: bold;
+                .icon-fa{
+                    color: black;
+                    background-color: white;
+                    padding: 15px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

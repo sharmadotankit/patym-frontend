@@ -1,0 +1,50 @@
+.footer-element{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    background-color:#f5f7fa; 
+
+    .left-footer{
+        flex:1;
+        display: flex;
+        text-align: left;
+
+        p{
+            font-size: 1.2rem;
+            font-weight: bold;
+            width: 200px;
+            margin-right: 10px;
+        }
+
+        button{
+            margin: 0px 10px;
+            background-color: black;
+            height: 60px;
+            color: #fff;
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: 5px;
+            align-items: center;
+            padding: 10px;
+            width: 200px;
+            .icon-img{
+                height: 40px;
+            }
+
+            span{
+                font-size: 0.6rem;
+                .btn-highlight{
+                    font-size: 1rem;
+                }
+            }
+
+            
+
+        }
+    }
+    .right-footer{
+        flex:1;
+        text-align: right;
+    }
+}

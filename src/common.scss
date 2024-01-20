@@ -1,3 +1,6 @@
+@import "variable";
+
+
 .connectToServer{
     height: 100vh;
     width: 100%;
@@ -16,7 +19,7 @@
       }
   
       h1{
-        background-color: #1D5D9B;
+        background-color: $secondary-color;
         color: white;
         padding: 30px;
         border-radius: 5px;
@@ -25,14 +28,15 @@
     
   }
 
-  .todo-container{
-    display: flex;
-    justify-content: center;
+  .main-container{
+    text-align: center;
     height: 100vh;
-    .todo-wrapper{
-      margin-top: 20px; 
-      text-align: center;
-      min-width: 350px;
+    margin-top: 10px;
+    width: 100%;
+
+    h6{
+      font-weight: bold;
+      font-size: 0.7rem;
     }
   }
 
